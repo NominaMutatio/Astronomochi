@@ -6,12 +6,11 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 1.25rem;
+    line-height: 1.5;
     color: var(--font-color);
     background-color: var(--bg-color);
     display: grid;
-    justify-content: center;
-    grid-gap: 5px 50px;
     grid-template-columns: auto;
     grid-template-areas: "header" "Home" "About" "Contact" "Portfolio" "Order";
 }
@@ -49,7 +48,6 @@ nav a {
 
 main {
     color: var(--font-color);
-    margin: 40px;
     padding: auto;
 
 }
@@ -58,18 +56,18 @@ section img {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    max-width: 100%;
+    max-width: 50%;
 }
 
 h1 {
     color: var(--font-color);
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
 }
 
 h2 {
     color: var(--font-color);
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
 }
 
