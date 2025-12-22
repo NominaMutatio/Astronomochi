@@ -17,11 +17,15 @@ body {
 }
 
 header {
-    display: flex;
+    display: grid;
     justify-content: space-between;
     gap: 10px;
     background-color: var(--header-color);
     max-inline-size: 100%;
+
+    @media (width > 720px) {
+        grid-template-columns: 1fr 1fr;
+    }
 
 }
 
@@ -36,7 +40,7 @@ header img {
     gap: 10px;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 10px auto;
 }
 
 .primary-navigation li {
@@ -44,7 +48,6 @@ header img {
 }
 
 .primary-navigation a {
-    margin-top: 10px;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.5rem;
