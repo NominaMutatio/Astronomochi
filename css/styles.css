@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --header-color: rgb(240, 200, 200);
     --font-color: rgb(48, 14, 14);
@@ -7,7 +11,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.25rem;
-    line-height: 1.5;
+    line-height: 1.6;
     color: var(--font-color);
     background-color: var(--bg-color);
     display: grid;
@@ -18,10 +22,7 @@ body {
 header{
     grid-area: header;
     background-color: var(--header-color);
-    min-height: 100px;
     max-width: 100%;
-    
-
 }
 
 header img {
@@ -48,36 +49,60 @@ nav a {
 
 main {
     color: var(--font-color);
-    padding: auto;
+    
 
+}
+
+
+section {  
+    margin: 20px;
+}
+
+section ul {
+    
+    font-size: 1.5rem;
 }
 
 section img {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 50%;
+    margin: 20px auto;
+    max-width: 100%;
+    padding: 20px;
+}
+
+p {
+    margin: 20px;
 }
 
 h1 {
     color: var(--font-color);
-    font-size: 3rem;
     text-align: center;
 }
 
 h2 {
     color: var(--font-color);
-    font-size: 3rem;
     text-align: center;
+}
+
+.jewelry-bg {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-image: url("../images/jewelry_bg.jpeg");
+    padding: 24px;
+    border: solid 5px var(--header-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
 
 footer {
     font-weight: lighter;
     text-align: center;
-    margin-top: 10px;
     background-color: var(--header-color);
-    padding: 10px;
+    padding: 20px;
     font-size: 0.9rem;
+    border: solid 4px var(--font-color);
 }
 
 
