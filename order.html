@@ -8,48 +8,82 @@
     </head>
     <body>
         <header>
-                <img src="images/logo.svg" alt="Logo">
-                    <nav>
-                        <a href="index.html">Home</a>
-                        <a href="about.html">About</a>
-                        <a href="contact.html">Contact</a>
-                        <a href="portfolio.html">Portfolio</a>
-                        <a href="order.html" aria-current="page">Order</a>
+                <img src="images/logo.svg" alt="Bunni Store">
+                    <nav class="primary-navigation" aria-label="Primary Navigation">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="order.html" aria-current="page">Order</a></li>
+                        </ul>
                     </nav>
             </header>
 
         <main>
             <h2>Place an Order!</h2>
 
-            <p><em>Fill out this form to request custom jewelry or accessories.</em></p>
-
-            <form method="get" autocomplete="on">
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname" placeholder="John/Jane" size="50"><br>
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname" placeholder="Doe" size="50"><br>
-
-                <br><label for="email">Enter your email:</label><br>
-                <input type="email" id="email" name="email" required placeholder="example@email.com"><br>
-
-                <p>Please select the type of item you'd like:</p>
-                <input type="radio" id="necklace" name="jewelryType" value="Necklace">
-                <label for="necklace">Necklace</label><br>
-                <input type="radio" id="earring" name="jewelryType" value="Earring">
-                <label for="earring">Earring</label><br>
-                <input type="radio" id="bracelet" name="jewelryType" value="Bracelet">
-                <label for="bracelet">Bracelet</label><br>
-
-                <br><label for="details">Describe your desired item and I'll contact you with ideas for what I can do!:</label><br>
-                <textarea id="details" name="details" rows="4" cols="50" placeholder="Include any specific materials, colors, styles, themes, etc. you want!"></textarea><br>
-
-                <input type="submit" value="Submit">
-            </form>
-
             <p>Submit an order request and I'll contact you soon to sort out details!</p>
 
             <p>Cost varies based on request, and I'm willing to negotiate and/or trade!! If you have any questions or concerns, just let me know ^-^</p>
         
+
+            <p><em>Fill out this form to request custom jewelry or accessories.</em></p>
+
+            <form>
+                <div class="form-group">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname" required placeholder="John/Jane" size="50"><br>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname" required placeholder="Doe" size="50"><br>
+                </div>
+
+                <div class="form-group">
+                    <br><label for="email">Enter your email:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@email.com"><br>
+                </div>
+
+                
+
+                <fieldset>
+                    <legend>Please select the type of item you'd like:</legend>
+
+                    <div class="form-group">
+
+
+                    <input type="radio" id="necklace" name="jewelryType" value="Necklace" required>
+                    <label for="necklace">Necklace</label><br>
+
+                    <input type="radio" id="earring" name="jewelryType" value="Earring" required>
+                    <label for="earring">Earring</label><br>
+
+                    <input type="radio" id="bracelet" name="jewelryType" value="Bracelet" required>
+                    <label for="bracelet">Bracelet</label><br>
+
+                    </div>
+
+
+                </fieldset>
+
+                <div class="form-group">
+                    <br><label for="details">Describe your desired item and I'll contact you with ideas for what I can do!:</label><br>
+                    <textarea id="details" name="details" required rows="4" cols="50" placeholder="Include any specific materials, colors, styles, themes, etc. you want!"></textarea><br>
+
+                    <input type="submit" value="Submit">
+
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" name="consent" id="consent" required>
+                    <label for="consent">I consent to being contacted for my order.</label>
+                </div>
+            </form>
+
+            
         </main>
 
         <footer>
